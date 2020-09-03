@@ -10,6 +10,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>My profile</title>
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#p1").hide();
+  $("body").mouseenter(function(){
+    $("#p1").show(1000);
+  });
+});</script>
+
 <style>
 	
 	.container1 {
@@ -25,18 +34,22 @@
   font-size: 20px;
 }
 li{
+
 	list-style-type: none;
 	padding: 7px;
 	margin: 0px;
 }
+img:hover{
+  opacity: 0.5;
+}
 </style>
 <body>
-<div class="container-fluid" style="margin-top:20px;">
+<div class="container-fluid" style="margin-top:20px;" >
        <div class="row" >
        	<div class="col-sm-1"></div>
          <div class="col-sm-3  mb-5 mr-1 " style="box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
 			<div class="container1">
-			<img src="https://previews.123rf.com/images/undrey/undrey1512/undrey151200148/49297397-female-working-with-laptop-at-home-woman-s-hands-on-notebook-computer-writer-blogger-designer-telewo.jpg" style="height: 300px; width: 100%;margin-top: 10px;" >
+			<img src="https://previews.123rf.com/images/undrey/undrey1512/undrey151200148/49297397-female-working-with-laptop-at-home-woman-s-hands-on-notebook-computer-writer-blogger-designer-telewo.jpg" style="height: 300px; width: 100%;margin-top: 10px;"  >
 			 <div class="bottom-left"><b>A S POORNA</b></div>
 			</div>
 			
@@ -73,7 +86,7 @@ li{
                     	<li><i class='fas fa-check-circle' style='font-size:18px;color: SlateBlue'></i> Hindi</li>
                     	<li><i class='fas fa-check-circle' style='font-size:18px;color: SlateBlue'></i> Telugu</li>
                      </div>
-                     <div class="col-sm-7 mb-5 ">
+                     <div class="col-sm-7 mb-5 " id="p1">
                      	<div style="box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); color: gray;">
                      	<br>
 
